@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'église Charismatique La foi Vivante de Bingerville</title>
+    <!-- Styles CSS -->
+    <style>
+        /* Styles CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: transparent; /* Arrière-plan transparent */
+            color: #663300; /* Couleur du texte marron */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #8B4513; /* Marron */
+            color: #fff; /* Couleur du texte blanc */
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #beige; /* Beige */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #663300; /* Couleur du texte marron */
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #8B4513; /* Marron */
+            color: #fff; /* Couleur du texte blanc */
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header avec le logo -->
+    <header>
+        <img src="https://www.canva.com/design/DAF9728LSy8/5s6zTgwQLlaUxm-C6F0bWQ/edit?utm_content=DAF9728LSy8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" alt="Logo de l'église">
+        <h1>L'église Charismatique La foi Vivante de Bingerville</h1>
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#temoignage">Témoignage</a></li>
+            <li><a href="#apropos">À propos de nous</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="https://www.facebook.com/votrepagefacebook" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/votrepageyoutube" target="_blank">YouTube</a></li>
+        </ul>
+    </nav>
+
+   
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 L'église Charismatique La foi Vivante de Bingerville. Tous droits réservés.</p>
+    </footer>
+    <!-- JavaScript pour le défilement fluide -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
